@@ -8,14 +8,16 @@ public class Movie {
 
     private String movieId;
     private String name;
+    private String description;
     private String overview;
 
     public Movie() {
     }
 
-    public Movie(String movieId, String name, String overview) {
+    public Movie(String movieId, String name, String description, String overview) {
         this.movieId = movieId;
         this.name = name;
+        this.description = description;
         this.overview = overview;
     }
 
@@ -33,6 +35,14 @@ public class Movie {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getOverview() {

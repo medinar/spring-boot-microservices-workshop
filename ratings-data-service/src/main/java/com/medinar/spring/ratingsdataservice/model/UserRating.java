@@ -8,14 +8,40 @@ import java.util.List;
  */
 public class UserRating {
 
-    private List<Rating> userRatings;
+    private String userId;
+    private List<Rating> ratings;
 
-    public List<Rating> getUserRatings() {
-        return userRatings;
+    public UserRating() {
     }
 
-    public void setUserRatings(List<Rating> userRatings) {
-        this.userRatings = userRatings;
+    public UserRating(String userId, List<Rating> ratings) {
+        this.userId = userId;
+        this.ratings = ratings;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public List<Rating> getRatings() {
+        return ratings;
+    }
+
+    public void setRatings(List<Rating> ratings) {
+        this.ratings = ratings;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("UserRating{userId=").append(userId);
+        sb.append(", ratings=").append(ratings);
+        sb.append('}');
+        return sb.toString();
     }
 
 }

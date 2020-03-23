@@ -1,0 +1,16 @@
+my:
+ greeting: Hello World
+
+app:
+ name: Greeting API
+ description: Welcome to ${app.name}!
+
+my.list.values: One, Two, Three 
+
+db:
+ values: "{connectionString: 'http://_____', userName: 'foo', password: 'pass'}"
+ connection: "{connectionString: 'http://_____', userName: 'foo', password: 'pass'}"
+ host: 127.0.0.1
+ port: 1200
+
+management.endpoints.web.exposure.include: "*"

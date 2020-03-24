@@ -1,7 +1,6 @@
 package com.medinar.spring.springbootconfig;
 
 import java.util.List;
-import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
@@ -27,8 +26,8 @@ public class GreetingController {
     @Value("${my.list.values}")
     private List<String> myListValues;
 
-    @Value("#{${db.values}}")
-    private Map<String, String> dbValues;
+//    @Value("#{${db.values}}")
+//    private Map<String, String> dbValues;
 
     @Autowired
     DbConfig dbConfig;
@@ -42,7 +41,6 @@ public class GreetingController {
                 + appDescription + " | "
                 + staticMessage + " | "
                 + myListValues + " | "
-                + dbValues + " | "
                 + dbConfig.toString();
     }
 

@@ -1,3 +1,5 @@
+## YAML Template.
+---
 my:
  greeting: Hello World
 
@@ -9,10 +11,8 @@ my.list.values: One, Two, Three
 
 db:
  values: "{connectionString: 'http://_____', userName: 'foo', password: 'pass'}"
- connection: "{connectionString: 'http://_____', userName: 'foo', password: 'pass'}"
+ connection: test connection string here
  host: 127.0.0.1
  port: 1200
 
 management.endpoints.web.exposure.include: "*"
-
-spring.profiles.active: test
